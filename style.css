@@ -272,3 +272,64 @@ footer { text-align: center; padding: 2rem 1rem; color: var(--muted); font-size:
     .js .reveal { opacity: 1; transform: none; }
 }
 #network-bg { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none; }
+
+/* ================= DIGITAL MARKETING GALLERY ================= */
+
+
+.flyer-slider {
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+    height: 650px;
+    margin: 45px auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flyer-container {
+    width: 92%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+
+    border-radius: 18px;
+    background: #111;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.flyer-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
+    visibility: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: opacity 0.5s ease;
+}
+
+.flyer-slide.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.flyer-slide img {
+    width: 100%;
+    height: 100%;
+
+    /* SHOW THE FULL IMAGE */
+    object-fit: contain;
+
+    display: block;
+}

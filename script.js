@@ -15,7 +15,7 @@ themeBtn.className = "theme-btn";
 themeBtn.type = "button";
 const syncThemeBtn = () => {
     const dark = root.dataset.theme === "dark";
-    themeBtn.textContent = dark ? "☀️" : "🌙";
+    themeBtn.textContent = dark ? "🔆" : "🌙";
     themeBtn.setAttribute("aria-label", dark ? "Switch to light theme" : "Switch to dark theme");
 };
 themeBtn.addEventListener("click", () => {
@@ -146,3 +146,39 @@ revealTargets.forEach(el => revealObserver.observe(el));
     resize();
     draw();
 })();
+
+let currentFlyer = 0;
+
+const flyers = document.querySelectorAll(".flyer-slide");
+const dots = document.querySelectorAll(".dot");
+
+function showFlyer(index) {
+
+    flyers.forEach((flyer) => {
+        flyer.classList.remove("active");
+    });
+
+    dots.forEach((dot) => {
+        dot.classList.remove("active");
+    });
+
+    flyers[index].classList.add("active");
+    dots[index].classList.add("active");
+
+    currentFlyer = index;
+}
+
+function changeFlyer(direction) {
+
+    currentFlyer += direction;
+
+    if (currentFlyer >= flyers.length) {
+        currentFlyer = 0;
+    }
+
+    if (currentFlyer < 0) {
+        currentFlyer = flyers.length - 1;
+    }
+
+    showFlyer(currentFlyer);
+}

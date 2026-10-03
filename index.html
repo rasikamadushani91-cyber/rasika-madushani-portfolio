@@ -13,7 +13,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
+    
 
     <!-- NAVBAR  -->
     <header class="navbar">
@@ -62,7 +64,7 @@
 
     <!-- Profile photo -->
     <img
-        src="Rasi.png"
+        src="images/Rasi.png"
         alt="Rasika Madushani"
         class="profile-image"
     >
@@ -325,8 +327,8 @@
                 <div class="project-card">
                     <div class="project-image">🚗</div>
                     <div class="project-content">
-                        <h3>Vehicle Management System</h3>
-                        <p>A web-based vehicle management system developed for academic purposes.</p>
+                        <h3>Mahiyanganaya Pradeshiya Sabha Vehicle Management System</h3>
+                        <p>  A web-based vehicle management system developed as an academic group project to manage vehicles, drivers, fuel, maintenance, and user records efficiently.</p>
                         <div class="project-tags">
                             <span>Laravel</span><span>PHP</span><span>MySQL</span><span>Bootstrap</span>
                         </div>
@@ -337,7 +339,7 @@
                     <div class="project-image">🅿️</div>
                     <div class="project-content">
                         <h3>Smart Car Parking System</h3>
-                        <p>An IoT-based smart parking concept for automated parking slot detection.</p>
+                        <p>An IoT-enabled smart parking system using ultrasonic sensors to detect parking slot occupancy and provide automated  real-time slot availability information..</p>
                         <div class="project-tags">
                             <span>IoT</span><span>Android</span><span>React</span>
                         </div>
@@ -379,8 +381,11 @@
         </div>
     </section>
 
-    <!-- DIGITAL MARKETING -->
+  
+       
+<!-- DIGITAL MARKETING -->
 <section id="marketing" class="section">
+
     <div class="container">
 
         <div class="section-title">
@@ -397,67 +402,123 @@
             </p>
         </div>
 
-        <div class="marketing-grid">
+        <!-- FLYER SLIDER -->
+        <div class="flyer-slider">
 
-            <div class="marketing-card">
-                <div class="marketing-icon">🎨</div>
-                <h3>Social Media Content</h3>
-                <p>
-                    Created promotional and social media content for events,
-                    campaigns and organizational activities.
-                </p>
-                <div class="marketing-tags">
-                    <span>Canva</span>
-                    <span>Social Media</span>
-                    <span>Content Creation</span>
+            <button class="slider-btn prev-btn" onclick="changeFlyer(-1)">
+                &#10094;
+            </button>
+
+            <div class="flyer-container">
+
+                <div class="flyer-slide active">
+                    <img src="images/r1 (1).png" alt="Creative Work 1">
                 </div>
+
+                <div class="flyer-slide">
+                    <img src="images/r1 (2).png" alt="Creative Work 2">
+                </div>
+
+                <div class="flyer-slide">
+                    <img src="images/r1 (3).png" alt="Creative Work 3">
+                </div>
+
+                <div class="flyer-slide">
+                    <img src="images/r1 (4).png" alt="Creative Work 4">
+                </div>
+
+                <div class="flyer-slide">
+                    <img src="images/r1 (5).png" alt="Creative Work 5">
+                </div>
+
+                <div class="flyer-slide">
+                    <img src="images/22.png" alt="Creative Work 6">
+                </div>
+
+                <div class="flyer-slide">
+                    <img src="images/23.png" alt="Creative Work 7">
+                </div>
+
+                <div class="flyer-slide">
+                    <img src="images/25.png" alt="Creative Work 8">
+                </div>
+                <div class="flyer-slide">
+                    <img src="images/F4.png" alt="Creative Work 9">
+                </div>
+
+                <div class="flyer-slide">
+                    <img src="images/1.png" alt="Creative Work 10">
+                </div>
+                <div class="flyer-slide">
+                    <img src="images/2.png" alt="Creative Work 11">
+                </div>
+                <div class="flyer-slide">
+                    <img src="images/3.png" alt="Creative Work 12">
+                </div>
+                <div class="flyer-slide">
+                    <img src="images/4.png" alt="Creative Work 13">
+                </div>
+                <div class="flyer-slide">
+                    <img src="images/5.1.png" alt="Creative Work 14">
+                </div>
+                <div class="flyer-slide">
+                    <img src="images/6.png" alt="Creative Work 15">
+                </div>
+                <div class="flyer-slide">
+                    <img src="images/MANEGMENT .png" alt="Creative Work 16">
+                </div>
+                <div class="flyer-slide">
+                    <img src="images/Efac.png" alt="Creative Work 17">
+                </div>
+                <div class="flyer-slide">
+                    <img src="images/hartbeatF1 (4).png" alt="Creative Work 18">
+                </div>
+                <div class="flyer-slide">
+                    <img src="images/new year flyer (3).png" alt="Creative Work 19">
+                </div>
+                <div class="flyer-slide">
+                    <img src="images/Delegates Registration (3).png" alt="Creative Work 20">
+                </div>
+
             </div>
 
-            <div class="marketing-card">
-                <div class="marketing-icon">📢</div>
-                <h3>Event Promotion</h3>
-                <p>
-                    Supported event promotion through digital promotional
-                    materials, campaign content and audience communication.
-                </p>
-                <div class="marketing-tags">
-                    <span>Campaigns</span>
-                    <span>Promotion</span>
-                    <span>Communication</span>
-                </div>
-            </div>
+            <button class="slider-btn next-btn" onclick="changeFlyer(1)">
+                &#10095;
+            </button>
 
-            <div class="marketing-card">
-                <div class="marketing-icon">🖼️</div>
-                <h3>Marketing Materials</h3>
-                <p>
-                    Designed digital posters, announcements, promotional
-                    graphics and other visual materials.
-                </p>
-                <div class="marketing-tags">
-                    <span>Canva</span>
-                    <span>Graphic Design</span>
-                    <span>Visual Content</span>
-                </div>
-            </div>
+        </div>
 
-            <div class="marketing-card">
-                <div class="marketing-icon">🎬</div>
-                <h3>Digital Content</h3>
-                <p>
-                    Developed creative digital content for online communication
-                    and promotional purposes.
-                </p>
-                <div class="marketing-tags">
-                    <span>Content Strategy</span>
-                    <span>Creative Design</span>
-                    <span>Digital Media</span>
-                </div>
-            </div>
+        <!-- SLIDER DOTS -->
+        <div class="slider-dots">
+            <span class="dot active" onclick="showFlyer(0)"></span>
+            <span class="dot" onclick="showFlyer(1)"></span>
+            <span class="dot" onclick="showFlyer(2)"></span>
+            <span class="dot" onclick="showFlyer(3)"></span>
+            <span class="dot" onclick="showFlyer(4)"></span>
+            <span class="dot" onclick="showFlyer(5)"></span>
+            <span class="dot" onclick="showFlyer(6)"></span>
+            <span class="dot" onclick="showFlyer(7)"></span>
+            <span class="dot" onclick="showFlyer(8)"></span>
+            <span class="dot" onclick="showFlyer(9)"></span>
+            <span class="dot" onclick="showFlyer(10)"></span>
+            <span class="dot" onclick="showFlyer(11)"></span>
+            <span class="dot" onclick="showFlyer(12)"></span>
+            <span class="dot" onclick="showFlyer(13)"></span>
+            <span class="dot" onclick="showFlyer(14)"></span>
+            <span class="dot" onclick="showFlyer(15)"></span>
+            <span class="dot" onclick="showFlyer(16)"></span>
+            <span class="dot" onclick="showFlyer(17)"></span>
+            <span class="dot" onclick="showFlyer(18)"></span>
+            <span class="dot" onclick="showFlyer(19)"></span>
+            <span class="dot" onclick="showFlyer(20)"></span>
+
 
         </div>
 
     </div>
+
+
+
 </section>
 
     <!-- CONTACT -->
